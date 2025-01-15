@@ -1,0 +1,89 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'C:/Users/tomas/.m2/repository/org/mariadb/jdbc/mariadb-java-client/3.5.1/mariadb-java-client-3.5.1.jar;C:/Users/tomas/.m2/repository/com/github/waffle/waffle-jna/3.3.0/waffle-jna-3.3.0.jar;C:/Users/tomas/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar;C:/Users/tomas/.m2/repository/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar;C:/Users/tomas/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.7/jcl-over-slf4j-2.0.7.jar;C:/Users/tomas/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar;C:/Users/tomas/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar;C:/Users/tomas/.m2/repository/com/google/errorprone/error_prone_annotations/2.10.0/error_prone_annotations-2.10.0.jar;C:/Users/tomas/.m2/repository/org/checkerframework/checker-qual/3.32.0/checker-qual-3.32.0.jar;C:/Users/tomas/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar;C:/Users/tomas/.m2/repository/jakarta/platform/jakarta.jakartaee-api/11.0.0-M1/jakarta.jakartaee-api-11.0.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/platform/jakarta.jakartaee-web-api/11.0.0-M1/jakarta.jakartaee-web-api-11.0.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.1.0-M1/jakarta.servlet-api-6.1.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/servlet/jsp/jakarta.servlet.jsp-api/4.0.0-M1/jakarta.servlet.jsp-api-4.0.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/data/jakarta-data-api/1.0.0-M1/jakarta-data-api-1.0.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-el-api/4.1.0-M1/jakarta.enterprise.cdi-el-api-4.1.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/el/jakarta.el-api/6.0.0-M1/jakarta.el-api-6.0.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/servlet/jsp/jstl/jakarta.servlet.jsp.jstl-api/3.0.0/jakarta.servlet.jsp.jstl-api-3.0.0.jar;C:/Users/tomas/.m2/repository/jakarta/faces/jakarta.faces-api/4.1.0-M1/jakarta.faces-api-4.1.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/websocket/jakarta.websocket-api/2.2.0-M1/jakarta.websocket-api-2.2.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/websocket/jakarta.websocket-client-api/2.2.0-M1/jakarta.websocket-client-api-2.2.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/ejb/jakarta.ejb-api/4.0.1/jakarta.ejb-api-4.0.1.jar;C:/Users/tomas/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar;C:/Users/tomas/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0-M1/jakarta.persistence-api-3.2.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.0-M1/jakarta.validation-api-3.1.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/authentication/jakarta.authentication-api/3.1.0-M1/jakarta.authentication-api-3.1.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/security/enterprise/jakarta.security.enterprise-api/4.0.0-M1/jakarta.security.enterprise-api-4.0.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/enterprise/concurrent/jakarta.enterprise.concurrent-api/3.1.0-M1/jakarta.enterprise.concurrent-api-3.1.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/platform/jakarta.jakartaee-core-api/11.0.0-M1/jakarta.jakartaee-core-api-11.0.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.1.0/jakarta.ws.rs-api-3.1.0.jar;C:/Users/tomas/.m2/repository/jakarta/json/jakarta.json-api/2.1.0/jakarta.json-api-2.1.0.jar;C:/Users/tomas/.m2/repository/jakarta/json/bind/jakarta.json.bind-api/3.0.0/jakarta.json.bind-api-3.0.0.jar;C:/Users/tomas/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0-M1/jakarta.annotation-api-3.0.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/interceptor/jakarta.interceptor-api/2.2.0-M1/jakarta.interceptor-api-2.2.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/4.1.0-M1/jakarta.enterprise.cdi-api-4.1.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar;C:/Users/tomas/.m2/repository/jakarta/enterprise/jakarta.enterprise.lang-model/4.1.0-M1/jakarta.enterprise.lang-model-4.1.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/jms/jakarta.jms-api/3.1.0/jakarta.jms-api-3.1.0.jar;C:/Users/tomas/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar;C:/Users/tomas/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.2/jakarta.mail-api-2.1.2.jar;C:/Users/tomas/.m2/repository/jakarta/resource/jakarta.resource-api/2.1.0/jakarta.resource-api-2.1.0.jar;C:/Users/tomas/.m2/repository/jakarta/authorization/jakarta.authorization-api/3.0.0-M1/jakarta.authorization-api-3.0.0-M1.jar;C:/Users/tomas/.m2/repository/jakarta/batch/jakarta.batch-api/2.1.1/jakarta.batch-api-2.1.1.jar;C:/Users/tomas/.m2/repository/com/guicedee/services/javax.servlet-api/1.0.9.14-jre14/javax.servlet-api-1.0.9.14-jre14.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'C:/Users/tomas/Visual/Carles/DAW-java-app/Practica3desplegament/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/tomas/Visual/Carles/DAW-java-app/Practica3desplegament/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Practica3desplegament-1.0-SNAPSHOT 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Practica3desplegament-1.0-SNAPSHOT 1.0-SNAPSHOT API'
+com.mycompany.practica3desplegament.resources
+com.mycompany.servlet
+com.mycompany.utils
+C:\Users\tomas\.m2\repository\org\mariadb\jdbc\mariadb-java-client\3.5.1\mariadb-java-client-3.5.1.jar = 1732726202305
+C:\Users\tomas\.m2\repository\com\github\waffle\waffle-jna\3.3.0\waffle-jna-3.3.0.jar = 1732726202371
+C:\Users\tomas\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar = 1732726202989
+C:\Users\tomas\.m2\repository\net\java\dev\jna\jna-platform\5.13.0\jna-platform-5.13.0.jar = 1732726203000
+C:\Users\tomas\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.7\jcl-over-slf4j-2.0.7.jar = 1732726202502
+C:\Users\tomas\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar = 1732726202523
+C:\Users\tomas\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.9.3\caffeine-2.9.3.jar = 1732726202531
+C:\Users\tomas\.m2\repository\com\google\errorprone\error_prone_annotations\2.10.0\error_prone_annotations-2.10.0.jar = 1732726202566
+C:\Users\tomas\.m2\repository\org\checkerframework\checker-qual\3.32.0\checker-qual-3.32.0.jar = 1732726202654
+C:\Users\tomas\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar = 1733860501150
+C:\Users\tomas\.m2\repository\jakarta\platform\jakarta.jakartaee-api\11.0.0-M1\jakarta.jakartaee-api-11.0.0-M1.jar = 1732724361066
+C:\Users\tomas\.m2\repository\jakarta\platform\jakarta.jakartaee-web-api\11.0.0-M1\jakarta.jakartaee-web-api-11.0.0-M1.jar = 1732724361246
+C:\Users\tomas\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0-M1\jakarta.servlet-api-6.1.0-M1.jar = 1732724361235
+C:\Users\tomas\.m2\repository\jakarta\servlet\jsp\jakarta.servlet.jsp-api\4.0.0-M1\jakarta.servlet.jsp-api-4.0.0-M1.jar = 1732724361199
+C:\Users\tomas\.m2\repository\jakarta\data\jakarta-data-api\1.0.0-M1\jakarta-data-api-1.0.0-M1.jar = 1732724362615
+C:\Users\tomas\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-el-api\4.1.0-M1\jakarta.enterprise.cdi-el-api-4.1.0-M1.jar = 1732724361353
+C:\Users\tomas\.m2\repository\jakarta\el\jakarta.el-api\6.0.0-M1\jakarta.el-api-6.0.0-M1.jar = 1732724361292
+C:\Users\tomas\.m2\repository\jakarta\servlet\jsp\jstl\jakarta.servlet.jsp.jstl-api\3.0.0\jakarta.servlet.jsp.jstl-api-3.0.0.jar = 1732724362197
+C:\Users\tomas\.m2\repository\jakarta\faces\jakarta.faces-api\4.1.0-M1\jakarta.faces-api-4.1.0-M1.jar = 1732724361428
+C:\Users\tomas\.m2\repository\jakarta\websocket\jakarta.websocket-api\2.2.0-M1\jakarta.websocket-api-2.2.0-M1.jar = 1732724361854
+C:\Users\tomas\.m2\repository\jakarta\websocket\jakarta.websocket-client-api\2.2.0-M1\jakarta.websocket-client-api-2.2.0-M1.jar = 1732724363232
+C:\Users\tomas\.m2\repository\jakarta\ejb\jakarta.ejb-api\4.0.1\jakarta.ejb-api-4.0.1.jar = 1732724361544
+C:\Users\tomas\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar = 1732724362593
+C:\Users\tomas\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.2.0-M1\jakarta.persistence-api-3.2.0-M1.jar = 1732724361947
+C:\Users\tomas\.m2\repository\jakarta\validation\jakarta.validation-api\3.1.0-M1\jakarta.validation-api-3.1.0-M1.jar = 1732724362021
+C:\Users\tomas\.m2\repository\jakarta\authentication\jakarta.authentication-api\3.1.0-M1\jakarta.authentication-api-3.1.0-M1.jar = 1732724363612
+C:\Users\tomas\.m2\repository\jakarta\security\enterprise\jakarta.security.enterprise-api\4.0.0-M1\jakarta.security.enterprise-api-4.0.0-M1.jar = 1732724362305
+C:\Users\tomas\.m2\repository\jakarta\enterprise\concurrent\jakarta.enterprise.concurrent-api\3.1.0-M1\jakarta.enterprise.concurrent-api-3.1.0-M1.jar = 1732724364076
+C:\Users\tomas\.m2\repository\jakarta\platform\jakarta.jakartaee-core-api\11.0.0-M1\jakarta.jakartaee-core-api-11.0.0-M1.jar = 1732724362810
+C:\Users\tomas\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar = 1732724362740
+C:\Users\tomas\.m2\repository\jakarta\json\jakarta.json-api\2.1.0\jakarta.json-api-2.1.0.jar = 1732724364421
+C:\Users\tomas\.m2\repository\jakarta\json\bind\jakarta.json.bind-api\3.0.0\jakarta.json.bind-api-3.0.0.jar = 1732724364072
+C:\Users\tomas\.m2\repository\jakarta\annotation\jakarta.annotation-api\3.0.0-M1\jakarta.annotation-api-3.0.0-M1.jar = 1732724364042
+C:\Users\tomas\.m2\repository\jakarta\interceptor\jakarta.interceptor-api\2.2.0-M1\jakarta.interceptor-api-2.2.0-M1.jar = 1732724364232
+C:\Users\tomas\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-api\4.1.0-M1\jakarta.enterprise.cdi-api-4.1.0-M1.jar = 1732724364175
+C:\Users\tomas\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar = 1732724364435
+C:\Users\tomas\.m2\repository\jakarta\enterprise\jakarta.enterprise.lang-model\4.1.0-M1\jakarta.enterprise.lang-model-4.1.0-M1.jar = 1732724365080
+C:\Users\tomas\.m2\repository\jakarta\jms\jakarta.jms-api\3.1.0\jakarta.jms-api-3.1.0.jar = 1732724364232
+C:\Users\tomas\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar = 1732724364367
+C:\Users\tomas\.m2\repository\jakarta\mail\jakarta.mail-api\2.1.2\jakarta.mail-api-2.1.2.jar = 1732724364434
+C:\Users\tomas\.m2\repository\jakarta\resource\jakarta.resource-api\2.1.0\jakarta.resource-api-2.1.0.jar = 1732724364468
+C:\Users\tomas\.m2\repository\jakarta\authorization\jakarta.authorization-api\3.0.0-M1\jakarta.authorization-api-3.0.0-M1.jar = 1732724365176
+C:\Users\tomas\.m2\repository\jakarta\batch\jakarta.batch-api\2.1.1\jakarta.batch-api-2.1.1.jar = 1732724366011
+C:\Users\tomas\.m2\repository\com\guicedee\services\javax.servlet-api\1.0.9.14-jre14\javax.servlet-api-1.0.9.14-jre14.jar = 1733331822162
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\src\main\java = 1736955360856
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\allclasses-index.html = 1736961447296
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\allpackages-index.html = 1736961447299
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\element-list = 1736961447223
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\help-doc.html = 1736961447323
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\index-all.html = 1736961447314
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\index.html = 1736961447289
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\member-search-index.js = 1736961447303
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\module-search-index.js = 1736961447300
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\overview-summary.html = 1736961447319
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\overview-tree.html = 1736961447286
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\package-search-index.js = 1736961447301
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\search.html = 1736961447317
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\serialized-form.html = 1736961447256
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\tag-search-index.js = 1736961447304
+C:\Users\tomas\Visual\Carles\DAW-java-app\Practica3desplegament\target\reports\apidocs\type-search-index.js = 1736961447302

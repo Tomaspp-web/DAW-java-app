@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.mycompany.utils","l":"ConnexioMariaDB"},{"p":"com.mycompany.servlet","l":"consultaservelet"},{"p":"com.mycompany.practica3desplegament.resources","l":"JakartaEE11Resource"},{"p":"com.mycompany.practica3desplegament.resources","l":"JakartaRestConfiguration"}];updateSearchResults();

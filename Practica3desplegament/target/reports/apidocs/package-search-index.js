@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.mycompany.practica3desplegament.resources"},{"l":"com.mycompany.servlet"},{"l":"com.mycompany.utils"}];updateSearchResults();
