@@ -1,0 +1,49 @@
+<!--
+ * @file web.xml
+ * @brief Descriptor de desplegament per a aplicacions web Jakarta EE.
+ * @details Aquest fitxer defineix la configuració de servlets, mapatges i altres aspectes del comportament de l'aplicació web.
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd">
+
+    <!--
+     * @section session-config
+     * @brief Configuració de la sessió.
+     * @details Defineix el temps d'inactivitat de la sessió abans que expiri.
+     * @property session-timeout Temps d'inactivitat en minuts.
+     * @value 30 La sessió expira després de 30 minuts.
+    -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!--
+     * @section servlet
+     * @brief Configuració del servlet ConsultaServlet.
+     * @details Defineix el nom i la classe del servlet, així com el seu mapatge d'URL.
+     * @property servlet-name Nom del servlet.
+     * @property servlet-class Classe Java que implementa el servlet.
+     * @property url-pattern Patró d'URL per accedir al servlet.
+    -->
+    <servlet>
+        <servlet-name>ConsultaServlet</servlet-name>
+        <servlet-class>com.mycompany.servlet.consultaservelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConsultaServlet</servlet-name>
+        <url-pattern>/consulta</url-pattern>
+    </servlet-mapping>
+
+    <!--
+     * @section welcome-file-list
+     * @brief Configuració de la pàgina de benvinguda.
+     * @details Defineix la pàgina JSP que es carregarà quan l'usuari accedeixi a la ruta principal.
+     * @property welcome-file Pàgina de benvinguda.
+     * @value llibreria.jsp Especifica que "llibreria.jsp" és la pàgina de benvinguda.
+    -->
+    <welcome-file-list>
+        <welcome-file>llibreria.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

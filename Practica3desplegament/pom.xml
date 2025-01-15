@@ -1,0 +1,144 @@
+<!--
+ * @file pom.xml
+ * @brief Fitxer de configuració Maven per al projecte Practica3desplegament.
+ * @details Aquest fitxer defineix les dependències, plugins i propietats necessàries per compilar i desplegar el projecte.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!--
+     * @tag modelVersion
+     * @brief Especifica la versió del model POM utilitzada.
+    -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+     * @tag groupId
+     * @brief Identificador únic del grup al qual pertany aquest projecte.
+    -->
+    <groupId>com.mycompany</groupId>
+
+    <!--
+     * @tag artifactId
+     * @brief Nom únic de l'artifact generat per aquest projecte.
+    -->
+    <artifactId>Practica3desplegament</artifactId>
+
+    <!--
+     * @tag version
+     * @brief Versió del projecte.
+    -->
+    <version>1.0-SNAPSHOT</version>
+
+    <!--
+     * @tag packaging
+     * @brief Tipus d'empaquetament utilitzat per al projecte. En aquest cas, "war" (Web Application Archive).
+    -->
+    <packaging>war</packaging>
+
+    <!--
+     * @tag name
+     * @brief Nom complet del projecte, inclosa la versió.
+    -->
+    <name>Practica3desplegament-1.0-SNAPSHOT</name>
+
+    <!--
+     * @section properties
+     * @brief Defineix propietats generals del projecte.
+    -->
+    <properties>
+        <!--
+         * @property project.build.sourceEncoding
+         * @brief Codificació utilitzada per als fitxers font del projecte.
+        -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!--
+         * @property jakartaee
+         * @brief Especifica la versió de la plataforma Jakarta EE.
+        -->
+        <jakartaee>11.0.0-M1</jakartaee>
+    </properties>
+
+    <!--
+     * @section dependencies
+     * @brief Llista de dependències necessàries per al projecte.
+    -->
+    <dependencies>
+        <!--
+         * @dependency MariaDB JDBC connector
+         * @brief Dependència per permetre connexió a bases de dades MariaDB.
+        -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>3.5.1</version>
+        </dependency>
+
+        <!--
+         * @dependency Jakarta EE API (Servlets, JSP, etc.)
+         * @brief Proporciona les APIs necessàries per al desenvolupament d'aplicacions web.
+         * @scope provided Especifica que les classes seran proporcionades pel servidor d'aplicacions.
+        -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--
+         * @dependency Jakarta EE API (JPA, EJB, etc.)
+         * @brief Dependència que cobreix APIs addicionals de Jakarta EE.
+        -->
+        <dependency>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>${jakartaee}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--
+         * @dependency Guicedee Services
+         * @brief Una implementació adicional del Servlet API.
+        -->
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>1.0.9.14-jre14</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+
+    <!--
+     * @section build
+     * @brief Configuració dels plugins Maven per compilar i empaquetar el projecte.
+    -->
+    <build>
+        <plugins>
+            <!--
+             * @plugin Maven Compiler Plugin
+             * @brief Plugin utilitzat per configurar la versió del JDK per compilar el projecte.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.12.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+
+            <!--
+             * @plugin Maven WAR Plugin
+             * @brief Plugin per empaquetar el projecte en un fitxer WAR.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

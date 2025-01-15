@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd">
+
+    <!-- Configuració de la sessió -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!-- Mapeig de consultaservelet (opcional si ja tens @WebServlet) -->
+    <servlet>
+        <servlet-name>ConsultaServlet</servlet-name>
+        <servlet-class>com.mycompany.servlet.consultaservelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConsultaServlet</servlet-name>
+        <url-pattern>/consulta</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuració de la pàgina de benvinguda -->
+    <welcome-file-list>
+        <welcome-file>llibreria.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

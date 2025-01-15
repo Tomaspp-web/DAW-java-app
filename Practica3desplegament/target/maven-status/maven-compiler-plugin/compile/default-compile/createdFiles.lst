@@ -1,0 +1,4 @@
+com\mycompany\practica3desplegament\resources\JakartaEE11Resource.class
+com\mycompany\utils\ConnexioMariaDB.class
+com\mycompany\servlet\consultaservelet.class
+com\mycompany\practica3desplegament\resources\JakartaRestConfiguration.class

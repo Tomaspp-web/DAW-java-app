@@ -1,0 +1,44 @@
+<!--
+ * @file nb-configuration.xml
+ * @brief Fitxer de configuració compartida per al projecte en NetBeans IDE.
+ * @details Aquest fitxer conté configuracions addicionals generades pels mòduls de NetBeans IDE i s'ha de compartir entre tots els usuaris del projecte.
+ * @note S'espera que aquest fitxer formi part del sistema de control de versions.
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<project-shared-configuration>
+    <!--
+     * @section General
+     * @brief Configuració general del projecte en NetBeans IDE.
+     * @details Aquestes configuracions poden afectar funcionalitats dins l'entorn de desenvolupament.
+    -->
+
+    <!--
+     * @section properties
+     * @brief Propietats que afecten diversos aspectes del projecte dins NetBeans IDE.
+     * @details Aquestes propietats poden ser copiades al fitxer pom.xml per compartir-les entre projectes.
+     * @note Les propietats definides aquí només s'apliquen al projecte actual i sobreescriuen valors del pom.xml.
+    -->
+    <properties xmlns="http://www.netbeans.org/ns/maven-properties-data/1">
+        <!--
+         * @property org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion
+         * @brief Versió de J2EE utilitzada pel projecte.
+         * @value 11-web Especifica la versió J2EE com "11-web".
+        -->
+        <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>11-web</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>
+
+        <!--
+         * @property org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server
+         * @brief Servidor de desplegament configurat pel projecte.
+         * @value Tomcat Especifica que el servidor de desplegament és Apache Tomcat.
+        -->
+        <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>Tomcat</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>
+
+        <!--
+         * @property org-netbeans-modules-maven-jaxws.rest_2e_config_2e_type
+         * @brief Tipus de configuració REST utilitzat pel projecte.
+         * @value ide Indica que la configuració REST és gestionada per l'IDE.
+        -->
+        <org-netbeans-modules-maven-jaxws.rest_2e_config_2e_type>ide</org-netbeans-modules-maven-jaxws.rest_2e_config_2e_type>
+    </properties>
+</project-shared-configuration>
+
